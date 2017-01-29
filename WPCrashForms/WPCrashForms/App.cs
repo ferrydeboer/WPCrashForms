@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using WPCrashForms.Resources;
+﻿using WPCrashForms.Resources;
 using WPCrashForms.Services;
 using Xamarin.Forms;
 
@@ -14,8 +9,7 @@ namespace WPCrashForms
         public App()
         {
             var ci = Localization.GetDeviceCultureInfo();
-            AppResources.Culture = ci; // set the RESX for resource localization
-            //var test = AppResources.HospitalsTitle;
+            AppResources.Culture = ci;
             Localization.SetLocale(ci);
 
             var tp = new ResourceTextProvider(Localization);
@@ -26,8 +20,10 @@ namespace WPCrashForms
                 Content = new StackLayout
                 {
                     VerticalOptions = LayoutOptions.Center,
-                    Children = {
-                        new Label {
+                    Children =
+                    {
+                        new Label
+                        {
                             HorizontalTextAlignment = TextAlignment.Center,
                             Text = tp.GetText("HelloWorld")
                         }

@@ -9,11 +9,10 @@ namespace WPCrashForms.WinPhone.Services
 
         public override CultureInfo GetDeviceCultureInfo()
         {
-            var name = Windows.System.UserProfile.GlobalizationPreferences.Languages[0];
-            CultureInfo ci = new CultureInfo(name);
-            return ci;
-//              return null;
-//            return CultureInfo.CurrentUICulture;
+//            var name = Windows.System.UserProfile.GlobalizationPreferences.Languages[0];
+//            CultureInfo ci = new CultureInfo(name);
+//            return ci;
+            return CultureInfo.CurrentUICulture;
         }
 
         public override void SetLocale(CultureInfo ci)

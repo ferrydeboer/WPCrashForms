@@ -6,7 +6,7 @@ namespace WPCrashForms.Services
 {
     public class ResourceTextProvider : ITextProvider
     {
-        public const string ResourceId = "AcuteZorg.UI.Resources.AppResources";
+        public const string ResourceId = "WPCrashForms.Resources.AppResources";
 
         private readonly ILocalize _localize;
         private readonly ResourceManager _resmgr;

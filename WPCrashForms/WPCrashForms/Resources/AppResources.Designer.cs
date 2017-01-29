@@ -62,7 +62,7 @@ namespace WPCrashForms.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Hallo Wereld!.
+        ///   Looks up a localized string similar to Hallo World!.
         /// </summary>
         internal static string HelloWorld {
             get {

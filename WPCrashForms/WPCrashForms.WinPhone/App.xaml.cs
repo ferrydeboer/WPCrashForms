@@ -35,6 +35,7 @@ namespace WPCrashForms.WinPhone
         public App()
         {
             var ci = new CultureInfo("nl-NL");
+
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
         }
