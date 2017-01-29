@@ -5,7 +5,7 @@ namespace WPCrashForms.WinPhone.Services
 {
     public class WinLocalize : LocalizeBase
     {
-        static CultureInfo _currentCulture;
+        private static CultureInfo _currentCulture;
 
         public override CultureInfo GetDeviceCultureInfo()
         {
